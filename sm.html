@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<style>
+.x{
+    clear: both;
+    display: block;
+    float: right;
+	background: yellow;
+}
+	</style>
+</head>
+<body>
+<script>
+
+	jQuery(document).ready(function($){
+		$('li').find('a').hover(function(){
+			if($(this).parent().find('.x').length<1){
+				$('.x').remove();
+				$(this).parent().append('<div class="x">'+$(this).attr('href').replace('//', '').replace('/', '</br>')+'</div>');
+			}
+		}).parent().hover(function(){},function(){
+			//$('.x').remove();
+		});
+	});
+
+</script>
+<ul class="sub-menu" style="width: 700px;">
+    <li id="menu-item-16947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16947 fusion-dropdown-submenu"><a href="#" aria-haspopup="true">Endoscopie Digestive</a>
+        <ul class="sub-menu">
+            <li id="menu-item-16946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16946"><a href="//eddd/" aria-haspopup="true">Endoscopie Digestive Diagnostique</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-47728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47728"><a href="#" aria-haspopup="true">Œsophage</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47729"><a href="//edd-oesophage/edd-aspect-normal/" aria-haspopup="true">Aspect normal</a></li>
+                            <li id="menu-item-47730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47730"><a href="//edd-oesophage/edd-oesophagite/" aria-haspopup="true">Œsophagite</a></li>
+                            <li id="menu-item-47731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47731"><a href="//edd-oesophage-peptique/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Peptique</a></li>
+                            <li id="menu-item-47732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47732"><a href="//edd-oesophage-infectieuse/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Infectieuse</a></li>
+                            <li id="menu-item-47733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47733"><a href="//edd-oesophage-caustique/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Caustique</a></li>
+                            <li id="menu-item-47734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47734"><a href="//edd-oesophage-divers/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Divers</a></li>
+                            <li id="menu-item-47735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47735"><a href="//edd-oesophage/edd-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                            <li id="menu-item-47736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47736"><a href="//edd-oesophage/edd-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                            <li id="menu-item-47737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47737"><a href="//edd-oesophage/edd-varices-oesophagiennes/" aria-haspopup="true">Varices œsophagiennes</a></li>
+                            <li id="menu-item-47738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47738"><a href="//edd-oesophage/edd-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47740"><a href="#" aria-haspopup="true">Estomac</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47739" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47739"><a href="//estomac/estomac-aspect-normal/" aria-haspopup="true">Aspect normal</a></li>
+                            <li id="menu-item-47741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47741"><a href="//estomac/estomac-gastrite-et-gastropathies/" aria-haspopup="true">Gastrite et Gastropathies</a></li>
+                            <li id="menu-item-47742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47742"><a href="//estomac/estomac-ulceres/" aria-haspopup="true">Ulcères</a></li>
+                            <li id="menu-item-47743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47743"><a href="//estomac/estomac-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                            <li id="menu-item-47744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47744"><a href="//estomac/estomac-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                            <li id="menu-item-47745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47745"><a href="//estomac/estomac-varices-gastriques/" aria-haspopup="true">Varices gastriques</a></li>
+                            <li id="menu-item-47746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47746"><a href="//estomac/estomac-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47747"><a href="#" aria-haspopup="true">Duodénum et Ampoule de water</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47748"><a href="//edd-vater-aspect-normal/" aria-haspopup="true">Aspect normal</a></li>
+                            <li id="menu-item-47749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47749"><a href="//edd-vater-duodenite/" aria-haspopup="true">Duodénite</a></li>
+                            <li id="menu-item-47750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47750"><a href="//edd-vater-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                            <li id="menu-item-47751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47751"><a href="//edd-vater-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                            <li id="menu-item-47753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47753"><a href="//edd-vater-ampoule-de-water/" aria-haspopup="true">Ampoule de Water</a></li>
+                            <li id="menu-item-47752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47752"><a href="//edd-vater-aspect-normal/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Aspect normal</a></li>
+                            <li id="menu-item-47754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47754"><a href="//edd-vater-ampoule-de-water/edd-vater-ampoule-de-water-ampullome/" aria-haspopup="true">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Ampullome</a></li>
+                            <li id="menu-item-47755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47755"><a href="//edi-duodenum-ampoule-de-water/edi-vater-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47756"><a href="//edd-grele/" aria-haspopup="true">Grêle</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47757"><a href="//edd-grele/edd-grele-aspect-normal/" aria-haspopup="true">Aspect normal</a></li>
+                            <li id="menu-item-47758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47758"><a href="//edd-grele/edd-grele-maladie-coeliaque/" aria-haspopup="true">Maladie cœliaque</a></li>
+                            <li id="menu-item-47759" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47759"><a href="//edd-grele/edd-grele-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                            <li id="menu-item-47760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47760"><a href="//edd-grele/edd-grele-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                            <li id="menu-item-47761" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47761"><a href="//edd-grele/edd-grele-crohn/" aria-haspopup="true">Crohn</a></li>
+                            <li id="menu-item-47762" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47762"><a href="//edd-grele/edd-grele-angiodysplasie/" aria-haspopup="true">Angiodysplasie</a></li>
+                            <li id="menu-item-47763" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47763"><a href="//edd-grele/edd-grele-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47764"><a href="//colon-rectum/" aria-haspopup="true">Colon – Rectum</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47765"><a href="//colon-rectum/edd-colon-aspect-normal/" aria-haspopup="true">Aspect normal</a></li>
+                            <li id="menu-item-47766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47766"><a href="//colon-rectum/edd-colon-colites/" aria-haspopup="true">Colites</a></li>
+                            <li id="menu-item-47767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47767"><a href="//colon-rectum/edd-colon-colites/edd-colon-colites-inflammatoires/" aria-haspopup="true">&gt; Colites inflammatoires</a></li>
+                            <li id="menu-item-47768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47768"><a href="//colon-rectum/edd-colon-colites/edd-colon-colites-infectieuses/" aria-haspopup="true">&gt; Colites infectieuses</a></li>
+                            <li id="menu-item-47769" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47769"><a href="//colon-rectum/edd-colon-colites/edd-colon-colites-ischemiques/" aria-haspopup="true">&gt; Colites ischémiques</a></li>
+                            <li id="menu-item-47770" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47770"><a href="//colon-rectum/edd-colon-colites/edd-colon-colites-ains/" aria-haspopup="true">&gt; Colites aux AINS</a></li>
+                            <li id="menu-item-47771" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47771"><a href="//colon-rectum/edd-colon-colites/edd-colon-colites-divers/" aria-haspopup="true">&gt; Divers</a></li>
+                            <li id="menu-item-47772" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47772"><a href="//colon-rectum/edd-colon-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                            <li id="menu-item-47773" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47773"><a href="//colon-rectum/edd-colon-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                            <li id="menu-item-47774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47774"><a href="//colon-rectum/edd-colon-angiodysplasies/" aria-haspopup="true">Angiodysplasies</a></li>
+                            <li id="menu-item-47775" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47775"><a href="//colon-rectum/edd-colon-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="menu-item-16961" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16961"><a href="//edi/" aria-haspopup="true">Endoscopie Digestive Interventionnelle</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-47776" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47776"><a href="//edi-oesophage/" aria-haspopup="true">Œsophage</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47783"><a href="//edi-oesophage/edi-ligature-des-varices-oesophagiennes/" aria-haspopup="true">Ligature des varices œsophagiennes</a></li>
+                            <li id="menu-item-47784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47784"><a href="//edi-oesophage/edi-sclerose-des-varices-oesophagiennes/" aria-haspopup="true">Sclérose des varices œsophagiennes</a></li>
+                            <li id="menu-item-47785" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47785"><a href="//edi-oesophage/dilatation-aux-bougies/" aria-haspopup="true">Dilatation aux bougies</a></li>
+                            <li id="menu-item-47786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47786"><a href="//edi-oesophage/edi-dilatation-pneumatique/" aria-haspopup="true">Dilatation pneumatique</a></li>
+                            <li id="menu-item-47787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47787"><a href="//edi-oesophage/edi-prothese-oesophagiennes/" aria-haspopup="true">Prothèse œsophagiennes</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47777" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47777"><a href="//edi-estomac/" aria-haspopup="true">Estomac</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47788"><a href="//edi-estomac/edi-encollage-des-varices-gastriques/" aria-haspopup="true">Encollage des varices gastriques</a></li>
+                            <li id="menu-item-47789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47789"><a href="//edi-estomac/edi-polypectomie/" aria-haspopup="true">Polypectomie</a></li>
+                            <li id="menu-item-47790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47790"><a href="//edi-estomac/edi-mucosectomie/" aria-haspopup="true">Mucosectomie</a></li>
+                            <li id="menu-item-47791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47791"><a href="//edi-estomac/edi-estomac-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47778" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47778"><a href="//edi-duodenum-ampoule-de-water/" aria-haspopup="true">Duodénum et Ampoule de Water</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47792"><a href="//edi-duodenum-ampoule-de-water/edi-cpre-pour-calculs/" aria-haspopup="true">CPRE pour calculs</a></li>
+                            <li id="menu-item-47793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47793"><a href="//edi-duodenum-ampoule-de-water/edi-kh-fistulise-dans-les-voies-biliaires/" aria-haspopup="true">KH fistulisé dans les voies biliaires</a></li>
+                            <li id="menu-item-47794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47794"><a href="//edi-duodenum-ampoule-de-water/edi-protheses-biliaires/" aria-haspopup="true">Prothèses biliaires</a></li>
+                            <li id="menu-item-47795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47795"><a href="//edi-duodenum-ampoule-de-water/edi-ampullectomie/" aria-haspopup="true">Ampullectomie</a></li>
+                            <li id="menu-item-47796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47796"><a href="//edi-duodenum-ampoule-de-water/edi-vater-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47779"><a href="//edi-grele/" aria-haspopup="true">Grêle</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47797"><a href="//edi-grele/edi-coagulation-plasma-argon/" aria-haspopup="true">Coagulation ( Plasma Argon)</a></li>
+                            <li id="menu-item-47798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47798"><a href="//edi-grele/edi-polypectomie-fr/" aria-haspopup="true">Polypectomie</a></li>
+                            <li id="menu-item-47799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47799"><a href="//edi-grele/edi-grele-mucosectomie/" aria-haspopup="true">Mucosectomie</a></li>
+                            <li id="menu-item-47800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47800"><a href="//edi-grele/edi-grele-dilatation/" aria-haspopup="true">Dilatation</a></li>
+                            <li id="menu-item-47801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47801"><a href="//edi-grele/edi-grele-protheses/" aria-haspopup="true">Prothèses</a></li>
+                            <li id="menu-item-47802" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47802"><a href="//edi-grele/edi-grele-divers/" aria-haspopup="true">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-47780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47780"><a href="//edi-colon-rectum/" aria-haspopup="true">Colon – Rectum</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-47803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47803"><a href="//edi-colon-rectum/edi-colon-coagulation-plasma-argon/" aria-haspopup="true">Coagulation ( Plasma Argon)</a></li>
+                            <li id="menu-item-47804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47804"><a href="//edi-colon-rectum/edi-colon-polypectomie/" aria-haspopup="true">Polypectomie</a></li>
+                            <li id="menu-item-47805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47805"><a href="//edi-colon-rectum/edi-colon-mucosectomie/" aria-haspopup="true">Mucosectomie</a></li>
+                            <li id="menu-item-47806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47806"><a href="//edi-colon-rectum/edi-colon-dilatation/" aria-haspopup="true">Dilatation</a></li>
+                            <li id="menu-item-47808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47808"><a href="//edi-colon-rectum/edi-colon-divers/" aria-haspopup="true">Divers</a></li>
+                            <li id="menu-item-47807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47807"><a href="//edi-colon-rectum/edi-colon-protheses/" aria-haspopup="true">Prothèses</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li id="menu-item-16577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16577 fusion-dropdown-submenu"><a href="#" aria-haspopup="true">Echoendoscopie Digestive</a>
+        <ul class="sub-menu">
+            <li id="menu-item-16962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16962"><a href="#" aria-haspopup="true">Echo-endoscopie digestive diagnostique</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16964"><a href="//echo-e-d-d-oesophage/" aria-haspopup="true">Œsophage</a></li>
+                    <li id="menu-item-16965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16965"><a href="//echo-e-d-d-estomac/" aria-haspopup="true">Estomac</a></li>
+                    <li id="menu-item-16966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16966"><a href="//echo-e-d-d-colon/" aria-haspopup="true">Colon</a></li>
+                    <li id="menu-item-16967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16967"><a href="//echo-e-d-d-voies-biliaires/" aria-haspopup="true">Voies biliaires</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16968"><a href="#" aria-haspopup="true">Echo-endoscopie digestive Interventionnelle</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16970"><a href="//echo-e-d-i-oesophage/" aria-haspopup="true">Œsophage</a></li>
+                    <li id="menu-item-16972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16972"><a href="//echo-e-d-i-estomac/" aria-haspopup="true">Estomac</a></li>
+                    <li id="menu-item-16974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16974"><a href="//echo-e-d-i-colon/" aria-haspopup="true">Colon</a></li>
+                    <li id="menu-item-16975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16975"><a href="//echo-e-d-i-voies-biliaires/" aria-haspopup="true">Voies biliaires</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li id="menu-item-16995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16995 fusion-dropdown-submenu"><a href="#" aria-haspopup="true">Proctologie</a>
+        <ul class="sub-menu">
+            <li id="menu-item-16976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16976"><a href="#" aria-haspopup="true">Hémorroïdes</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16977"><a href="//proctologie-hemorroides-externes/" aria-haspopup="true">Hémorroïdes externes</a></li>
+                    <li id="menu-item-16978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16978"><a href="//proctologie-hemorroides-internes/" aria-haspopup="true">Hémorroïdes internes</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16979"><a href="#" aria-haspopup="true">Fissures anales</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16980"><a href="//proctologie-fissures-anales-typiques/" aria-haspopup="true">Fissures anales typiques</a></li>
+                    <li id="menu-item-16981" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16981"><a href="//proctologie-fissures-anales-atypiques/" aria-haspopup="true">Fissures anales atypiques</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16982" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16982"><a href="#" aria-haspopup="true">Suppurations ano-périnéales</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16983"><a href="//proctologie-abces-et-fistules-anales/" aria-haspopup="true">Abcès et Fistules anales</a></li>
+                    <li id="menu-item-16984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16984"><a href="//proctologie-lap-de-crohn/" aria-haspopup="true">LAP de Crohn</a></li>
+                    <li id="menu-item-16985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16985"><a href="//proctologie-sinus-pilonidal/" aria-haspopup="true">Sinus pilonidal</a></li>
+                    <li id="menu-item-16986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16986"><a href="//proctologie-maladie-de-verneuil/" aria-haspopup="true">Maladie de Verneuil</a></li>
+                    <li id="menu-item-16987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16987"><a href="//proctologie-gangrene-perineale/" aria-haspopup="true">Gangrène périnéale</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16988"><a href="#" aria-haspopup="true">Pathologie tumorale</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16989" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16989"><a href="//proctologie-tumeurs-benignes/" aria-haspopup="true">Tumeurs bénignes</a></li>
+                    <li id="menu-item-16990" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16990"><a href="//proctologie-tumeurs-malignes/" aria-haspopup="true">Tumeurs malignes</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16991" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16991"><a href="#" aria-haspopup="true">Troubles de la statique pelvienne</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-16992" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16992"><a href="//proctologie-prolapsus-rectal/" aria-haspopup="true">Prolapsus rectal</a></li>
+                    <li id="menu-item-16993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16993"><a href="//proctologie-prolapsus-genital/" aria-haspopup="true">Prolapsus génital</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-16994" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16994"><a href="//proctologie-divers/" aria-haspopup="true">Divers</a></li>
+        </ul>
+    </li>
+    <li id="menu-item-16578" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16578 fusion-dropdown-submenu"><a href="http://smed-maroc.org/comment-soumissionner/" aria-haspopup="true">Comment soumissionner</a></li>
+    <li id="menu-item-16579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16579 fusion-dropdown-submenu"><a href="http://smed-maroc.org/commission-scientifique/" aria-haspopup="true">Comité scientifique de l’atlas de la SMED</a></li>
+</ul>
+</body>
+</html>
