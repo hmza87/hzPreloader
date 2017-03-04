@@ -49,9 +49,12 @@
 <script src="hz.preloader.js"></script>
 <script>
 
-    $('.lol').hzPreloader({
-        auto:true
-    });
+    (function($){
+        $('.lol').hzPreloader({
+            auto:true
+        });
+
+    }(jQuery))
 
 </script>
 </body>
