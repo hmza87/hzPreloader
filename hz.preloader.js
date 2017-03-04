@@ -50,7 +50,7 @@
             'width': '50px',
             'margin': '0 auto',
             'top': '5%',
-            'left': ($(document).width/2)
+            'left': 50-((25*100)/window.innerWidth)+'%'
         });
     }
     function Coloriz(){
