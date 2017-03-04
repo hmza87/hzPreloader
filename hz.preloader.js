@@ -54,68 +54,69 @@
         });
     }
     function Coloriz(){
-        $('#'+innerID).css({
-            'stroke': Colorz[CurrentColor]
-            });
-        setTimeout(Coloriz, 2000);
-        if(CurrentColor<3){CurrentColor++;}else{CurrentColor=0;}
-    }
-
-
-
-
-
-    $.fn.hzPreloader = function( options ) {
-        // default options fi7alat ma.
-        var settings = $.extend({
-            container: "body",
-            auto: true,
-            colors: ['#51BBA7','#F44336', '#9C27B0', '#E91E63']
-        }, options );
-
-        Colorz=settings.colors;
-
-
-
-        if(!exists()){
-            initializ(this);
-            trigger=settings.auto;
-            }
-
-
-
-        if(options=='show'){
-            $('#'+containerID).show();
-            return this;
-        }else if(options=='hide'){
-            $('#'+containerID).fadeOut('slow').remove();
-            return this;
+            if(CurrentColor<Colorz.length){CurrentColor++;}else{CurrentColor=0;}
+            $('#'+innerID).css({
+                'stroke': Colorz[CurrentColor]
+                });
+            setTimeout(Coloriz, 2000);
         }
 
 
 
 
 
+    $.fn.hzPreloader = function( options ) {
+
+        // default options fi7alat ma.
+        var settings = $.extend({
+            container: "body",
+            auto: true,
+            colors: ['#51BBA7','#F44336', '#9C27B0', '#E91E63']
+        }, options );
+        if(exists()){$('#'+containerID).fadeOut().remove();}
+
+        //npassiw clcolors l local variable
+        Colorz=settings.colors;
+        
 
 
-
-        setTimeout(Coloriz, 1000);
-        if (trigger){ $('#'+containerID).show();}
+        //ila kant awl merra
+        if(!exists(this)){
+            initializ(this);
+            trigger=settings.auto;
+            }
+        if(options=='show'){
+            exists(this)?$('#'+containerID).show():initializ(this);
+            return this;
+        }else if(options=='hide'){
+            exists(this)?$('#'+containerID).fadeOut('slow').remove():new hzException("err");
+            return this;
+        }
+        
+        if (trigger){ $('#'+containerID).show();setTimeout(Coloriz, 1000);}
         return this;
     };
 
 
-    function exists(){
-        return (this.find('#'+containerID).length>0)
+    function exists(container){
+        
+        
+        console.log((('#'+containerID).length>0) && ($('#'+containerID).parent()==(container==undefined?this:container)));
+       
+        return (('#'+containerID).length>0) && ($('#'+containerID).parent()==(container==undefined?this:container))
     }
     function randID(){
-    var text = "hzpl_";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        var text = "hzpl_";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    for( var i=0; i < 5; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        for( var i=0; i < 5; i++ )
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-    return text;
+        return text;
+    }
+    function hzException(message) {
+        this.message = message;
+        this.name = 'hzPreloaderException';
     }
 
 }( jQuery ));
