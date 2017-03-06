@@ -8,6 +8,7 @@
     loadID=randID(),
     innerID=randID(),
     containerID=randID();
+    visible=true;
 
     var exStyle='@keyframes loading {0% {transform: rotate(0);}100% {transform: rotate(360deg);}}' +
                 '@keyframes loading-circle {0% {stroke-dashoffset: 10;}100% {stroke-dashoffset: -800;}}';
@@ -94,6 +95,7 @@
         }
         
         if (trigger){ $('#'+containerID).show();setTimeout(Coloriz, 1000);}
+        
         return this;
     };
 

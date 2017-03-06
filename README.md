@@ -1,6 +1,10 @@
 # hzPreloader
-- working on it
+- still in early stages
 
+## example
+~~~~
+$('body').hzPreloader({colors:['#ccc', 'red'], autoload:true})
+~~~~
 
 ## Live
 
