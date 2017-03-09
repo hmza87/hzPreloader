@@ -1,9 +1,13 @@
 # hzPreloader
+A simple smart Preloader, using clean Javascript
 - still in early stages
 
 ## example
 ~~~~
-$('body').hzPreloader({colors:['#ccc', 'red'], autoload:true})
+    hz('body').preLoader({
+                            colors:['#ccc', 'red'],
+                            autoload:true
+                        });
 ~~~~
 
 ## Live
