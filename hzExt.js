@@ -194,13 +194,11 @@ hz = function(str){
        
         return (hz('#'+containerID).length>0) && (hz('#'+containerID).parent()==(container==undefined?this:container))
     }
-    function randID(){
-        var text = "hzpl_";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-        for( var i=0; i < 5; i++ )
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-
+    function randID(LENGTH,PREFIX){
+        if(LENGTH==undefined) LENGTH = 5;
+        var text = (PREFIX==undefined) ? "hzpl_" : PREFIX;
+        for( var i=0; i < LENGTH; i++ )
+            text += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".charAt(Math.floor(Math.random() * 62));
         return text;
     }
     function hzException(message) {
